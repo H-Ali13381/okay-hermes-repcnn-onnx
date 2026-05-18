@@ -1,0 +1,36 @@
+{
+  "model_type": "okay-hermes-wakeword-repcnn",
+  "architectures": [
+    "MergedRepCNNWakewordDetector"
+  ],
+  "task": "wake-word-detection",
+  "pipeline_tag": "audio-classification",
+  "library_name": "onnx",
+  "format": "onnx",
+  "onnx_file": "wakeword.onnx",
+  "metadata_file": "wakeword.json",
+  "license": "apache-2.0",
+  "wake_phrase": "Okay Hermes",
+  "sample_rate": 16000,
+  "window_seconds": 3.0,
+  "input_name": "waveform",
+  "input_shape": [
+    "batch",
+    48000
+  ],
+  "output_name": "score",
+  "output_shape": [
+    "batch"
+  ],
+  "output_semantics": "direct_probability_no_sigmoid_needed",
+  "recommended_threshold": 0.6973556280136108,
+  "backend": "wavlm-repcnn",
+  "model_family": "repcnn",
+  "reparameterized": true,
+  "repconv_merged": true,
+  "teacher_model_type": "wavlm",
+  "teacher_model": "microsoft/wavlm-base",
+  "eer": 0.0,
+  "sha256": "f022856f17916f5c7b2d8041f44308f889f292d92be12b71e1fe3ee49bd0a0fc",
+  "bytes": 224807
+}

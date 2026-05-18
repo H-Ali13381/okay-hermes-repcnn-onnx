@@ -1,0 +1,17 @@
+{
+  "wake_phrase": "Okay Hermes",
+  "sample_rate": 16000,
+  "n_mels": 40,
+  "n_fft": 400,
+  "hop_length": 160,
+  "max_frames": 301,
+  "threshold": 0.6973556280136108,
+  "eer": 0.0,
+  "backend": "wavlm-repcnn",
+  "model_type": "repcnn",
+  "reparameterized": true,
+  "repconv_merged": true,
+  "teacher_model_type": "wavlm",
+  "teacher_model": "microsoft/wavlm-base",
+  "model_file": "wakeword.onnx"
+}
