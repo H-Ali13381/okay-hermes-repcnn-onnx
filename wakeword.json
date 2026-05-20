@@ -1,6 +1,8 @@
 {
   "wake_phrase": "Okay Hermes",
   "sample_rate": 16000,
+  "window_seconds": 3.0,
+  "window_samples": 48000,
   "n_mels": 40,
   "n_fft": 400,
   "hop_length": 160,

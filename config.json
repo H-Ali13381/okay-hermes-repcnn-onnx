@@ -13,10 +13,11 @@
   "wake_phrase": "Okay Hermes",
   "sample_rate": 16000,
   "window_seconds": 3.0,
+  "window_samples": 48000,
   "input_name": "waveform",
   "input_shape": [
     "batch",
-    48000
+    "time"
   ],
   "output_name": "score",
   "output_shape": [

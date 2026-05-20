@@ -119,6 +119,7 @@ print(float(score), trigger)
 - Teacher model: `microsoft/wavlm-base`
 - Audio frontend: included in the ONNX graph; callers provide waveform audio directly
 - Output: direct probability named `score`
+- ONNX input shape: dynamic time axis named `time`; use 48,000 samples for the documented 3-second window
 - Recommended threshold: `0.6973556280136108`
 - Export metadata EER: `0.0`
 - ONNX size: `224807` bytes
